@@ -21,9 +21,6 @@ body{
     
 }
 
-/*.container{
-    position: relative;
-}*/
 
 #welcome{
     position: absolute;
@@ -75,14 +72,12 @@ nav {
     color: #183a1d;
     padding: 23px 40px;
     line-height: 70px;
-    /*text-transform: uppercase;*/
     font-size: 20px;
     letter-spacing: 2px;
     text-decoration: none;
 }
 
 .response:hover, .response:active{
-    /*background-color: rgb(110, 110, 110);*/
     font-size: 25px;
     color: black;
     transition: 0.4s;
@@ -113,7 +108,6 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    /*background-color: black;*/
     min-width: 160px;
     z-index: 1;
     transition: 0.4s; 
@@ -145,23 +139,16 @@ nav {
 }
 
 .main{
-    /*margin: auto;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     font-size: 20px;
-    /*border: 1px solid black;*/
     background-color: #183a1d;
     color: #fefbe9;
 }
 
-/*.intro{
-    border: 1px solid black;
-}*/
-
 .intro img{
     max-width: 80%;
     min-height: 250px;
-    /*center the image*/
     display: block;
     margin-left: 50px;
     margin-right: auto;
@@ -188,16 +175,12 @@ nav {
     text-align: center;
 }
 
-/*.project{
-    border: 1px solid black;
-    /*background-color: #e1eedd;
-}*/
+
 
 .part3{
     margin-top: 20px;
     text-align: center;
     color: #183a1d;
-    /*border: 1px solid black;*/
 }
 
 .pj{
@@ -213,7 +196,42 @@ nav {
     font-size: 20px;
 }
 
-button:nth-child(4n+1){
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid-item {
+    align-items: top;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    height: 500px; /* Adjust the height as needed */
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+#project-title {
+    line-height: 25px; /* Add margin between paragraphs */
+    font-size: 22px;
+}
+
+#description{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+/* button:nth-child(4n+1){
     background-color: #45664a;
     color: #fefbe9;
 }
@@ -234,8 +252,6 @@ button:nth-child(4n+3):hover {
 }
 
 .collapsible {
-    /*background-color: rosybrown;*/
-    /*color: #fefbe9;*/
     cursor: pointer;
     padding: 30px;
     width: 100%;
@@ -244,28 +260,7 @@ button:nth-child(4n+3):hover {
     outline: none;
     font-size: 22px;
     font-family: Josefin Sans;
-}
-
-
-/*.col1, .col3, .col5{
-    background-color: #45664a;
-    color: #fefbe9;
-}*/
-
-/*.col2, .col4{
-    background-color: #ffe6ac;
-    color: #183a1d;
-}*/
-
-/*.col1:hover, .col3:hover, .col5:hover {
-    background-color: #183a1d;
-    transition: 0.4s;
-}*/
-
-/*.col2:hover, .col4:hover {
-    background-color: #fcd16d;
-    transition: 0.4s;
-}*/
+} */
 
 .content {
     padding: 0px 80px 0px 33px;
@@ -344,10 +339,8 @@ button:nth-child(4n+3):hover {
 }
 
 .part5{
-    /*margin-top: 70px;*/
     text-align: center;
     color: #183a1d;
-    /*border: 1px solid black;*/
     line-height: 25px;
 }
 
@@ -362,14 +355,6 @@ button:nth-child(4n+3):hover {
     width: 70%;
     border-radius: 3px;
 }
-
-/*.main2{
-    max-width: 1500px;
-    margin: 50px auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 20px;
-}*/
 
   
 .p1{
