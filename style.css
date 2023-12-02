@@ -16,7 +16,7 @@ body{
 }
 #background{
     width: 100vw;
-    height: 500px;
+    height: 637px;
     /*border: 1px solid black;*/
     
 }
@@ -30,7 +30,7 @@ body{
     top: 0;
     /*border: 1px solid black;*/
     /*width: 70%;*/
-    top: 300px;
+    top: 370px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -147,7 +147,7 @@ nav {
 .main{
     /*margin: auto;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     font-size: 20px;
     /*border: 1px solid black;*/
     background-color: #183a1d;
@@ -159,25 +159,33 @@ nav {
 }*/
 
 .intro img{
-    max-width: 120%;
-    min-height: 570px;
+    max-width: 80%;
+    min-height: 250px;
+    /*center the image*/
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 140px;
+    margin-bottom: auto;
+
 }
 
 .part2{
-    max-width: 650px;
-    margin: 40px auto 0px auto;
+    max-width: 850px;
+    margin: 40px 50px 0px auto;
 }
 
 .para{
     margin-top: 15px;
     margin-bottom: 15px;
-    line-height: 25px;
-    text-align: center;
+    line-height: 32px;
+    text-align: left;
 }
 
 .pp1{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
+    text-align: center;
 }
 
 /*.project{
