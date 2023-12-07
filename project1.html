@@ -21,7 +21,7 @@
     </div>
 
     <div class="pic1">
-        <img id="twitter" src="twitter.jpeg" alt="">
+        <img id="twitter" src="illustrations/twitter.jpeg" alt="">
     </div>
 
     <p id="caption1">
@@ -51,7 +51,7 @@
         Here is a snippet of what the training set looks like:
     </p>
 
-    <img class="pic2" src="df head.png" alt="">
+    <img class="pic2" src="illustrations/df head.png" alt="">
 
     <h3>
         Additional information about hashtags and tweets
@@ -65,13 +65,13 @@
         Prior to removing stop words, emojis, links, and lemmatization the tweet length (in both words and characters) is summarized in Table I. It is worth noting that the character count does include white space. Twitter limits tweets to 280 characters, which does include spaces, but not full hyperlink text. In addition, the way that emojis are represented is may also have inflated the character counts. The average amount of hashtags is also reported in Table I. The mean hashtag lengths were only calculated for tweets containing hashtags (in other words, missing hashtags were not counted as a length of zero).
     </p>
 
-    <img class="pic3" src="table1.png" alt="">
+    <img class="pic3" src="illustrations/table1.png" alt="">
 
     <p id="p2">
         After text cleaning and lemmatization, the tweet length measures were recalculated and are summarized in Table II. It is worth noting that majority of the tweets in the data set are not in English. Non-English stop words were removed for some languages, but not all of the languages represented in the dataset. The language also affects lemmatization, which relies on part-of-speech tagging and is supported in English. As anticipated, since text and hyperlinks were removed, the overall character and word counts are both shorter. The elimination of short words, punctuation, and stop words led to some tweets being erased. For example, the tweet "F R E D R I K S T A D..........." is no longer valid after cleaning and lemmatization.
     </p>
 
-    <img class="pic3" src="table2.png" alt="">
+    <img class="pic3" src="illustrations/table2.png" alt="">
 
     <h2>
         Exploratory Data Analysis
@@ -86,13 +86,13 @@
     </p>
 
     <div class="grid-container">
-        <div class="grid-item"><img src="belgium.png" alt="Pie Chart 1"></div>
-        <div class="grid-item"><img src="denmark.png" alt="Pie Chart 2"></div>
-        <div class="grid-item"><img src="iceland.png" alt="Pie Chart 3"></div>
-        <div class="grid-item"><img src="ireland.png" alt="Pie Chart 4"></div>
-        <div class="grid-item"><img src="netherlands.png" alt="Pie Chart 5"></div>
-        <div class="grid-item"><img src="norway.png" alt="Pie Chart 6"></div>
-        <div class="grid-item"><img src="sweden.png" alt="Pie Chart 7"></div>
+        <div class="grid-item"><img src="illustrations/belgium.png" alt="Pie Chart 1"></div>
+        <div class="grid-item"><img src="illustrations/denmark.png" alt="Pie Chart 2"></div>
+        <div class="grid-item"><img src="illustrations/iceland.png" alt="Pie Chart 3"></div>
+        <div class="grid-item"><img src="illustrations/ireland.png" alt="Pie Chart 4"></div>
+        <div class="grid-item"><img src="illustrations/netherlands.png" alt="Pie Chart 5"></div>
+        <div class="grid-item"><img src="illustrations/norway.png" alt="Pie Chart 6"></div>
+        <div class="grid-item"><img src="illustrations/sweden.png" alt="Pie Chart 7"></div>
     </div>
 
     <p id="caption1">
@@ -115,7 +115,7 @@
         Political views
     </h3>
 
-    <img class="pic3" src="political view.png" alt="">
+    <img class="pic3" src="illustrations/political view.png" alt="">
 
     <p id="caption1">
         Figure 2
@@ -129,7 +129,7 @@
         Gender distribution
     </h3>
 
-    <img class="pic3" src="gender dist.png" alt="">
+    <img class="pic3" src="illustrations/gender dist.png" alt="">
 
     <p id="caption1">
         Figure 3
@@ -151,7 +151,7 @@
         The LDA plot (Figure 4) shows the groupings of some terms. It appears that language is important to the topic groupings, for example topics 6-9 all are English terms, while the remaining topics do not have many (or any) English terms, which makes sense based on how topics are grouped based on words appearing alongside each other.
     </p>
 
-    <img class="pic3" src="Topics in LDA model.png" alt="">
+    <img class="pic3" src="illustrations/Topics in LDA model.png" alt="">
 
     <p id="caption1">
         Figure 4
@@ -161,9 +161,9 @@
         When applying NMF (Fig. 5) to the data, similarly language was important to topic grouping. NMF works by taking a document-term matrix and factorizing it into a document-topic matrix, which shows distribution of topics across all documents, and term-topic matrix, which shows the distribution of terms for each topic. The term-topic matrix is what is used to generate the plots in Fig. 5. For exaple, in the Frobenius Norm NMF model, words such as today, day, year, good, need, were all grouped together in topic 5, while words such as president, covid19, join, launch, support, ministier, were all grouped together in topic 2.
     </p>
 
-    <img class="pic3" src="Topics in NMF model (Frobenius norm).png" alt="">
+    <img class="pic3" src="illustrations/Topics in NMF model (Frobenius norm).png" alt="">
 
-    <img class="pic3" src="Topics in NMF model (generalized Kullback-Leibler divergence).png" alt="">
+    <img class="pic3" src="illustrations/Topics in NMF model (generalized Kullback-Leibler divergence).png" alt="">
 
     <p id="caption1">
         Figure 5
@@ -181,7 +181,7 @@
         From the EDA, while there was a class imbalance of political spectrum, there was not a major imbalance of gender across each political ideology (Figure 6). In the training data set there were very few users that identified as independent (n=703, accounting for approximately 0.1% of the records in the training set).
     </p>
 
-    <img class="pic3" src="gender imbalance.png" alt="">
+    <img class="pic3" src="illustrations/gender imbalance.png" alt="">
 
     <p id="caption1">
         Figure 6
@@ -191,7 +191,7 @@
     The EDA revealed that both the user in the reply-to screenname, and the screenname a tweet was retweeted from, are both very strong indicators of political preference of the user. For example, Table III lists several popular screennames that were replied to, and the proportion of users associated with each political view. This phenomenon was true for screennames pertaining to both retweets and reply tweets. Additional examples beyond Table III can be found in the code PDF.
     </p>
 
-    <img class="pic3" src="table3.png" alt="">
+    <img class="pic3" src="illustrations/table3.png" alt="">
 
     <h2>
         Feature generation
@@ -276,13 +276,13 @@
         During training, the catboost classifier had an accuracy of 0.64 on the evaluation set and 0.634 on the test set before the relabeling procedure (Figure 7).
     </p>
 
-    <img class="pic3" src="cb.png" alt="">
+    <img class="pic3" src="illustrations/cb.png" alt="">
 
     <p id="p2">
         Another reasonably successful model we had was a decision tree model with a depth of 60 that was also re- labelled. Prior to re-labelling, the model had an accuracy of 0.60 on the model validation set (Figure 8), and 0.59 on the test data. After re-labelling, the model achieved an accuracy of 0.67.
     </p>
 
-    <img class="pic3" src="dt.png" alt="">
+    <img class="pic3" src="illustrations/dt.png" alt="">
 
     <h2>
         Limitations

@@ -59,15 +59,6 @@ nav {
     align-content: center;
 }
 
-/*.menu{
-    border: 1px solid black;
-    display: block;
-    width: 200px;
-    height: 70px;
-    text-align: center;
-    padding: 20px 10px;
-}*/
-
 .response{
     color: #183a1d;
     padding: 23px 40px;
@@ -199,7 +190,7 @@ nav {
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     padding: 20px;
     margin-left: 100px;
@@ -217,11 +208,13 @@ nav {
     padding-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #183a1d;
 }
 
 #project-title {
     line-height: 25px; /* Add margin between paragraphs */
     font-size: 22px;
+    height: 60px;
 }
 
 #description{
@@ -230,7 +223,67 @@ nav {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 30px;
+    padding-right: 20px;
     text-align: left;
+    height: 300px;
+}
+
+#link{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.invisible1{
+    display: none;
+}
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
+    gap: 10px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid-item1 {
+    align-items: top;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 450px; /* Adjust the height as needed */
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #183a1d;
+    
+}
+
+#project-title1 {
+    line-height: 25px; /* Add margin between paragraphs */
+    font-size: 22px;
+    height: 40px;
+}
+
+#description1 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left;
+    height: 270px;
+}
+
+#link1 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
 }
 
 /* button:nth-child(4n+1){
@@ -372,13 +425,13 @@ button:nth-child(4n+3):hover {
     text-align: center;
 }
 
-iframe{
+/* iframe{
     width: 100%;
     height: 700px;
     margin: 0px auto;
     display: block;
     border: none;
-}
+} */
 
 #startbtn{
     margin: 40px;
